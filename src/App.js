@@ -7,7 +7,7 @@ import CurrentTemp from './components/CurrentTemp';
 
 const App = () => {
   const { data, loading, error } = useRequest(
-    'http://bence-temperature-api.herokuapp.com/api/getTemps',
+    'https://bence-temperature-api.herokuapp.com/api/getTemps',
   );
   return (
     <>
