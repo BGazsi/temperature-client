@@ -1,0 +1,19 @@
+.card {
+  background-color: white;
+  width: calc((100% - 4rem) / 4 );
+  min-height: 15rem;
+  margin-right: 1rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  padding: 1rem;
+  box-shadow: 4px 4px 7px 0 rgba(51,51,51,0.49);
+  border-radius: 1px;
+  display: flex;
+  flex-direction: column;
+  color: #666;
+
+  .centered {
+    font-size: 5rem;
+    margin: auto;
+  }
+}

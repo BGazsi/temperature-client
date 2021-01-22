@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import useRequest from './hooks/useRequest';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+import './App.scss';
+import LeftNav from './components/LeftNav';
+import CurrentTemp from './components/CurrentTemp';
+
+const App = () => {
+  const { data, loading, error } = useRequest(
+    'http://localhost:3000/api/getTemps',
   );
-}
+  return (
+    <>
+      <LeftNav />
+      <div className="app">
+        <CurrentTemp data={data} error={error} isLoading={loading} />
+      </div>
+    </>
+  );
+};
 
 export default App;
