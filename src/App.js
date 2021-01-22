@@ -4,16 +4,18 @@ import useRequest from './hooks/useRequest';
 import './App.scss';
 import LeftNav from './components/LeftNav';
 import CurrentTemp from './components/CurrentTemp';
+import Statistics from './components/Statistics';
 
 const App = () => {
   const { data, loading, error } = useRequest(
-    'https://bence-temperature-api.herokuapp.com/api/getTemps',
+    'http://localhost:3000/api/getTemps',
   );
   return (
     <>
       <LeftNav />
       <div className="app">
         <CurrentTemp data={data} error={error} isLoading={loading} />
+        <Statistics data={data} />
       </div>
     </>
   );

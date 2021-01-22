@@ -13,7 +13,7 @@ const CurrentTemp = ({ data, error, isLoading }) => {
     return `error: ${error}`;
   }
 
-  const current = data.sort((a, b) => -(a.timestamp - b.timestamp))[0];
+  const current = data[0];
 
   return (
     <div className="page-inner">
