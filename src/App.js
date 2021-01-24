@@ -13,7 +13,7 @@ const App = () => {
     'http://localhost:3000/api/getTemps',
   );
   return (
-    <Router>
+    <Router basename="/temperature-client">
       <LeftNav />
       <div className="app">
         <Switch>
