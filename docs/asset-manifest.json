@@ -1,25 +1,22 @@
 {
   "files": {
-    "main.css": "./temperature-client/static/css/main.a18f40ae.chunk.css",
-    "main.js": "./temperature-client/static/js/main.11b1c8fe.chunk.js",
-    "main.js.map": "./temperature-client/static/js/main.11b1c8fe.chunk.js.map",
-    "runtime-main.js": "./temperature-client/static/js/runtime-main.7ce670a1.js",
-    "runtime-main.js.map": "./temperature-client/static/js/runtime-main.7ce670a1.js.map",
-    "static/css/2.427abd32.chunk.css": "./temperature-client/static/css/2.427abd32.chunk.css",
-    "static/js/2.02e97de3.chunk.js": "./temperature-client/static/js/2.02e97de3.chunk.js",
-    "static/js/2.02e97de3.chunk.js.map": "./temperature-client/static/js/2.02e97de3.chunk.js.map",
-    "static/js/3.9f3ef799.chunk.js": "./temperature-client/static/js/3.9f3ef799.chunk.js",
-    "static/js/3.9f3ef799.chunk.js.map": "./temperature-client/static/js/3.9f3ef799.chunk.js.map",
-    "index.html": "./temperature-client/index.html",
-    "static/css/2.427abd32.chunk.css.map": "./temperature-client/static/css/2.427abd32.chunk.css.map",
-    "static/css/main.a18f40ae.chunk.css.map": "./temperature-client/static/css/main.a18f40ae.chunk.css.map",
-    "static/js/2.02e97de3.chunk.js.LICENSE.txt": "./temperature-client/static/js/2.02e97de3.chunk.js.LICENSE.txt"
+    "main.css": "/temperature-client/static/css/main.9856d7a2.chunk.css",
+    "main.js": "/temperature-client/static/js/main.8d2c7e81.chunk.js",
+    "main.js.map": "/temperature-client/static/js/main.8d2c7e81.chunk.js.map",
+    "runtime-main.js": "/temperature-client/static/js/runtime-main.903b09da.js",
+    "runtime-main.js.map": "/temperature-client/static/js/runtime-main.903b09da.js.map",
+    "static/js/2.81284224.chunk.js": "/temperature-client/static/js/2.81284224.chunk.js",
+    "static/js/2.81284224.chunk.js.map": "/temperature-client/static/js/2.81284224.chunk.js.map",
+    "static/js/3.98417fc4.chunk.js": "/temperature-client/static/js/3.98417fc4.chunk.js",
+    "static/js/3.98417fc4.chunk.js.map": "/temperature-client/static/js/3.98417fc4.chunk.js.map",
+    "index.html": "/temperature-client/index.html",
+    "static/css/main.9856d7a2.chunk.css.map": "/temperature-client/static/css/main.9856d7a2.chunk.css.map",
+    "static/js/2.81284224.chunk.js.LICENSE.txt": "/temperature-client/static/js/2.81284224.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.7ce670a1.js",
-    "static/css/2.427abd32.chunk.css",
-    "static/js/2.02e97de3.chunk.js",
-    "static/css/main.a18f40ae.chunk.css",
-    "static/js/main.11b1c8fe.chunk.js"
+    "static/js/runtime-main.903b09da.js",
+    "static/js/2.81284224.chunk.js",
+    "static/css/main.9856d7a2.chunk.css",
+    "static/js/main.8d2c7e81.chunk.js"
   ]
 }

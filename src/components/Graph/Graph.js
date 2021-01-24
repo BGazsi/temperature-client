@@ -1,10 +1,10 @@
 import React from 'react';
-import { AreaChart } from '@carbon/charts-react';
+import { LineChart } from '@carbon/charts-react';
 import { PropTypes } from 'prop-types';
 import { tempGraphOptions } from './graphOptions';
 
 const Graph = ({ data, options }) => (
-  <AreaChart data={data} options={options} />
+  <LineChart data={data} options={options} />
 );
 
 Graph.propTypes = {

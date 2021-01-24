@@ -1,8 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import '@carbon/charts/styles.css';
 import LastDayGraphs from '../../components/Graph/LastDayGraphs';
-import LastHourGraphs from '../../components/Graph/LastHourGraphs';
+import Last30MinGraphs from '../../components/Graph/Last30MinGraphs';
 
 const Statistics = ({ data }) => {
   if (!data || !data.length) {
@@ -12,7 +11,7 @@ const Statistics = ({ data }) => {
   return (
     <main>
       <LastDayGraphs data={data} />
-      <LastHourGraphs data={data} />
+      <Last30MinGraphs data={data} />
     </main>
   );
 };

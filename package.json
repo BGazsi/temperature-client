@@ -5,6 +5,7 @@
   "dependencies": {
     "@carbon/charts": "^0.41.27",
     "@carbon/charts-react": "^0.41.27",
+    "@carbon/icons-react": "^10.23.0",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",
@@ -26,7 +27,7 @@
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
-  "homepage": "./temperature-client",
+  "homepage": "/temperature-client",
   "eslintConfig": {
     "extends": [
       "react-app",

@@ -7,25 +7,40 @@ import useChartData from '../../hooks/useChartData';
 import './style.scss';
 import createSubset from '../../utils/createSubset';
 import Card from '../Card';
+import getYAxisLimits from '../../utils/getYAxisLimits';
 
 const LastDayGraph = ({ data }) => {
   const rarefiedData = averageData(createSubset(data, 60 * 24), 60);
   const [tempData, humidityData] = useChartData(rarefiedData);
-  // eslint-disable-next-line no-console
-  console.log({ ...tempGraphOptions, title: 'Last day temperatures' });
+  const [
+    minTempValue,
+    maxTempValue,
+    minHumidityValue,
+    maxHumidityValue,
+  ] = getYAxisLimits(rarefiedData);
+
+  const mergedTempOptions = JSON.parse(JSON.stringify(tempGraphOptions));
+  mergedTempOptions.axes.left.domain = [+minTempValue, +maxTempValue];
+  const mergedHumidityOptions = JSON.parse(
+    JSON.stringify(humidityGraphOptions),
+  );
+  mergedHumidityOptions.axes.left.domain = [
+    +minHumidityValue,
+    +maxHumidityValue,
+  ];
 
   return (
     <div className="last-day-graphs graphs">
       <Card cardInARow={2}>
         <Graph
           data={tempData}
-          options={{ ...tempGraphOptions, title: 'Last day temperatures' }}
+          options={{ ...mergedTempOptions, title: 'Last day temperatures' }}
         />
       </Card>
       <Card cardInARow={2}>
         <Graph
           data={humidityData}
-          options={{ ...humidityGraphOptions, title: 'Last day humidity' }}
+          options={{ ...mergedHumidityOptions, title: 'Last day humidity' }}
         />
       </Card>
     </div>
