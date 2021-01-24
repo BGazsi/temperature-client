@@ -1,7 +1,7 @@
 import React from 'react';
 import { Grid, Loading, Row } from 'carbon-components-react';
 import PropTypes from 'prop-types';
-import Card from '../Card';
+import Card from '../../components/Card';
 import './style.scss';
 
 const CurrentTemp = ({ data, error, isLoading }) => {

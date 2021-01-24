@@ -1,14 +1,15 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import './style.scss';
 
 const LeftNav = () => (
   <aside className="left-nav">
     <ul>
       <li className="left-nav__item">
-        <a href="/">Current temperature</a>
+        <Link to="/">Current temperature</Link>
       </li>
       <li className="left-nav__item">
-        <a href="/">Statistics</a>
+        <Link to="/statistics">Statistics</Link>
       </li>
     </ul>
   </aside>

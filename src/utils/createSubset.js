@@ -1,4 +1,7 @@
 const findClosestPointToTime = (data, timestamp) => {
+  if (!data || data.length === 0) {
+    return data;
+  }
   if (timestamp > +data[0].timestamp || !timestamp) {
     return [data[0], 0];
   }
@@ -15,6 +18,9 @@ const findClosestPointToTime = (data, timestamp) => {
 };
 
 const createSubset = (data, subsetTimeframeInMinute, startTime) => {
+  if (!data || data.length === 0) {
+    return data;
+  }
   const safeStartTime = startTime || +data[0].timestamp;
   // eslint-disable-next-line no-unused-vars
   const [start, startIndex] = findClosestPointToTime(data, startTime);

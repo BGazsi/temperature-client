@@ -16,4 +16,28 @@
     font-size: 5rem;
     margin: auto;
   }
+
+  &--1 {
+    width: 100%;
+  }
+
+  &--2 {
+    width: calc((100% - 2rem) / 2 );
+  }
+
+  &--3 {
+    width: calc((100% - 3rem) / 3 );
+  }
+
+  &--4 {
+    width: calc((100% - 4rem) / 4 );
+  }
+
+  &--6 {
+    width: calc((100% - 6rem) / 6 );
+  }
+
+  &--12 {
+    width: calc((100% - 12rem) / 12 );
+  }
 }
