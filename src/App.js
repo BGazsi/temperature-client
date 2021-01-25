@@ -10,7 +10,7 @@ import Landing from './pages/Landing';
 
 const App = () => {
   const { data, loading, error } = useRequest(
-    'http://localhost:3000/api/getTemps',
+    'https://bence-temperature-api.herokuapp.com/api/getTemps',
   );
   return (
     <Router basename="/temperature-client">
