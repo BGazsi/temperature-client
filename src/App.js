@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { HashRouter as Router, Switch, Route } from 'react-router-dom';
 import useRequest from './hooks/useRequest';
 
 import './App.scss';
@@ -13,7 +13,7 @@ const App = () => {
     'https://bence-temperature-api.herokuapp.com/api/getTemps',
   );
   return (
-    <Router basename="/temperature-client">
+    <Router>
       <LeftNav />
       <div className="app">
         <Switch>
