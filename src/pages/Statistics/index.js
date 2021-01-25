@@ -10,6 +10,12 @@ const Statistics = ({ data }) => {
 
   return (
     <main>
+      <small className="timestamp timestamp--padded">
+        Last measurement at:{' '}
+        {`${new Date(+data[0].timestamp).toLocaleDateString()}, ${new Date(
+          +data[0].timestamp,
+        ).toLocaleTimeString()}`}
+      </small>
       <LastDayGraphs data={data} />
       <Last30MinGraphs data={data} />
     </main>
