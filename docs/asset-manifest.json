@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/temperature-client/static/css/main.cb6362b9.chunk.css",
-    "main.js": "/temperature-client/static/js/main.37acd12b.chunk.js",
-    "main.js.map": "/temperature-client/static/js/main.37acd12b.chunk.js.map",
-    "runtime-main.js": "/temperature-client/static/js/runtime-main.903b09da.js",
-    "runtime-main.js.map": "/temperature-client/static/js/runtime-main.903b09da.js.map",
-    "static/js/2.1cfe9c42.chunk.js": "/temperature-client/static/js/2.1cfe9c42.chunk.js",
-    "static/js/2.1cfe9c42.chunk.js.map": "/temperature-client/static/js/2.1cfe9c42.chunk.js.map",
-    "static/js/3.98417fc4.chunk.js": "/temperature-client/static/js/3.98417fc4.chunk.js",
-    "static/js/3.98417fc4.chunk.js.map": "/temperature-client/static/js/3.98417fc4.chunk.js.map",
+    "main.css": "/temperature-client/static/css/main.828d4211.chunk.css",
+    "main.js": "/temperature-client/static/js/main.7574471e.chunk.js",
+    "main.js.map": "/temperature-client/static/js/main.7574471e.chunk.js.map",
+    "runtime-main.js": "/temperature-client/static/js/runtime-main.49d0b5cb.js",
+    "runtime-main.js.map": "/temperature-client/static/js/runtime-main.49d0b5cb.js.map",
+    "static/js/2.c5debd4d.chunk.js": "/temperature-client/static/js/2.c5debd4d.chunk.js",
+    "static/js/2.c5debd4d.chunk.js.map": "/temperature-client/static/js/2.c5debd4d.chunk.js.map",
+    "static/js/3.da4cb1db.chunk.js": "/temperature-client/static/js/3.da4cb1db.chunk.js",
+    "static/js/3.da4cb1db.chunk.js.map": "/temperature-client/static/js/3.da4cb1db.chunk.js.map",
     "index.html": "/temperature-client/index.html",
-    "static/css/main.cb6362b9.chunk.css.map": "/temperature-client/static/css/main.cb6362b9.chunk.css.map",
-    "static/js/2.1cfe9c42.chunk.js.LICENSE.txt": "/temperature-client/static/js/2.1cfe9c42.chunk.js.LICENSE.txt"
+    "static/css/main.828d4211.chunk.css.map": "/temperature-client/static/css/main.828d4211.chunk.css.map",
+    "static/js/2.c5debd4d.chunk.js.LICENSE.txt": "/temperature-client/static/js/2.c5debd4d.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.903b09da.js",
-    "static/js/2.1cfe9c42.chunk.js",
-    "static/css/main.cb6362b9.chunk.css",
-    "static/js/main.37acd12b.chunk.js"
+    "static/js/runtime-main.49d0b5cb.js",
+    "static/js/2.c5debd4d.chunk.js",
+    "static/css/main.828d4211.chunk.css",
+    "static/js/main.7574471e.chunk.js"
   ]
 }

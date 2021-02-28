@@ -1,19 +1,24 @@
 import React from 'react';
 import { Grid, Loading, Row } from 'carbon-components-react';
 import PropTypes from 'prop-types';
+import { connect } from 'react-redux';
 import Card from '../../components/Card';
 import './style.scss';
+import {
+  incrementalFetch,
+  initialFetch,
+} from '../../store/actions/loadActions';
 
-const CurrentTemp = ({ data, error, isLoading }) => {
-  if (isLoading || (!data && !error)) {
+const CurrentTemp = ({ data, error }) => {
+  if (!error && !data.length) {
     return <Loading active withOverlay />;
   }
 
   if (error) {
-    return `error: ${error}`;
+    return `error: ${error.message || error}`;
   }
 
-  const current = data[0];
+  const current = data[0] || {};
 
   return (
     <div className="page-inner">
@@ -50,13 +55,22 @@ CurrentTemp.propTypes = {
     }),
   ),
   error: PropTypes.instanceOf(Object),
-  isLoading: PropTypes.bool,
 };
 
 CurrentTemp.defaultProps = {
   data: null,
   error: null,
-  isLoading: false,
 };
 
-export default CurrentTemp;
+const mapStateToProps = (state, ownProps) => ({
+  ...ownProps,
+  data: state.load.data,
+  error: state.load.error,
+});
+
+const mapDispatchToProps = dispatch => ({
+  fetchInit: data => dispatch(initialFetch(data)),
+  fetchIncrement: data => dispatch(incrementalFetch(data)),
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)(CurrentTemp);
